@@ -2,8 +2,8 @@
 
 The company has launched a new onboarding and activation campaign to help new users get started more effectively and encourage them to become paying customers. To test whether the new campaign works better than the current onboarding process, users were divided into two groups:
 
-### Control Group: Existing onboarding experience
-### Treatment Group: New onboarding campaign
+### * Control Group: Existing onboarding experience
+### * Treatment Group: New onboarding campaign
 
 The main decision is whether the company should launch the new onboarding campaign for all users.
 
