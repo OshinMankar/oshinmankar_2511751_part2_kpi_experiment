@@ -1,6 +1,6 @@
 # Business Problem Statement
 
-### The company has launched a new onboarding and activation campaign to help new users get started more effectively and encourage them to become paying customers. To test whether the new campaign works better than the current onboarding process, users were divided into two groups:
+The company has launched a new onboarding and activation campaign to help new users get started more effectively and encourage them to become paying customers. To test whether the new campaign works better than the current onboarding process, users were divided into two groups:
 
 ### Control Group: Existing onboarding experience
 ### Treatment Group: New onboarding campaign
