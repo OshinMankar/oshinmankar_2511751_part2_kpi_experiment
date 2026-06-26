@@ -2,55 +2,59 @@
 
 ## Objective
 
-The purpose of this hypothesis test is to determine whether the new onboarding and activation campaign (Treatment group) performs better than the existing onboarding experience (Control group) in increasing the paid conversion rate.
+The objective of this hypothesis test was to determine whether the new onboarding and activation campaign (Treatment group) resulted in a higher paid conversion rate than the existing onboarding experience (Control group).
 
-## Metric Being Tested
+## Metric Tested
 
 **Paid Conversion Rate**
 
-Paid Conversion Rate = Number of users who converted to paid ÷ Total number of users
+Paid Conversion Rate = Number of users converted to paid ÷ Total number of users
 
-## Why This Metric?
+This metric was selected because it is the primary success metric and directly measures the effectiveness of the onboarding campaign in converting users into paying subscribers.
 
-Paid conversion rate is the primary success metric because it directly measures how effectively the onboarding experience converts users into paying subscribers. Since the company follows a subscription-based business model, improving this metric contributes directly to business growth and revenue.
+## Test Used
 
-## Null Hypothesis (H₀)
+Two-Proportion Z-Test
 
-There is **no significant difference** in the paid conversion rate between the Control group and the Treatment group.
+This test was chosen because the metric being analyzed is binary (users either converted to paid or did not).
 
-[
-H_0 : p_{Treatment} = p_{Control}
-]
+## Test Inputs
 
-## Alternative Hypothesis (H₁)
+| Group     | Total Users | Converted Users | Conversion Rate |
+| --------- | ----------: | --------------: | --------------: |
+| Control   |         693 |              22 |           3.17% |
+| Treatment |         715 |              50 |           6.99% |
 
-There **is a significant difference** in the paid conversion rate between the Control group and the Treatment group.
+## Hypotheses
 
-[
-H_1 : p_{Treatment} \neq p_{Control}
-]
+**Null Hypothesis (H₀):**
+There is no significant difference in the paid conversion rate between the Control and Treatment groups.
 
-## Type of Test
-
-**Two-tailed hypothesis test**
-
-A two-tailed test is used because we want to determine whether the new onboarding campaign performs differently from the existing experience, whether the result is better or worse.
+**Alternative Hypothesis (H₁):**
+There is a significant difference in the paid conversion rate between the Control and Treatment groups.
 
 ## Significance Level
 
-**α = 0.05 (5%)**
+The significance level used for the test is **α = 0.05**.
 
-A 5% significance level is used, which is the standard threshold for business experiments. If the p-value is less than 0.05, the result will be considered statistically significant.
+## Test Results
 
-## Interpretation Logic
+* Pooled Conversion Rate: **0.0511**
+* Standard Error: **0.0117**
+* Z-score: **3.25**
+* P-value: **0.00115**
 
-* If **p-value < 0.05**, reject the null hypothesis and conclude that the new onboarding campaign has a statistically significant impact on the paid conversion rate.
-* If **p-value ≥ 0.05**, fail to reject the null hypothesis and conclude that there is not enough evidence to say the Treatment group performs differently from the Control group.
+## Decision Rule
 
-## Business Decision
+* If the p-value is less than 0.05, reject the null hypothesis.
+* If the p-value is greater than or equal to 0.05, fail to reject the null hypothesis.
 
-The new onboarding campaign should be recommended for rollout only if:
+## Result
 
-* The Treatment group shows a statistically significant improvement in paid conversion rate.
-* Guardrail metrics (such as refund rate and support ticket rate) do not show a meaningful decline in user experience.
-* The expected business benefits outweigh the cost of implementing the new onboarding experience.
+Since the **p-value (0.00115)** is less than **0.05**, the null hypothesis is rejected.
+
+## Business Interpretation
+
+The Treatment group achieved a paid conversion rate of **6.99%**, compared to **3.17%** for the Control group. The statistical test indicates that this improvement is unlikely to have occurred by chance.
+
+Based on the primary success metric, the new onboarding campaign performed significantly better than the existing onboarding experience. Therefore, the Treatment can be considered for rollout, provided that the guardrail metrics (such as refund rate and support ticket rate) do not show any negative impact on the user experience.
