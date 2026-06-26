@@ -191,8 +191,5 @@ Before a full rollout, the company should investigate the reasons for the increa
 The repository includes the following screenshots:
 
 * KPI Tree Preview
-* Data Quality Checks
-* Experiment Summary
 * Hypothesis Test Output
 * Guardrail Metrics Summary
-* Segment-Level Analysis
